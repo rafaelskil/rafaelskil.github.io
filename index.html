@@ -1,79 +1,77 @@
-<!DOCTYPE html>
-<html lang="pt_BR" class="no-js">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1.0">
-</head>
-      <style>
-      html body {width: 100%;height: 100%;padding: 0px;margin: 0px;overflow: hidden;font-family: arial;font-size: 10px;color: #000;background-color: #000;} #preview-frame {width: 100%;background-color: #000;}</style>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <script>
-         //function to fix height of iframe!
-         var calcHeight = function() {
-           //var headerDimensions = 0; //$('#header-bar').height();
-           $('#preview-frame').height($(window).height());
-         }
-         
-         $(document).ready(function() {
-           calcHeight();
-           /*$('#header-bar a.close').mouseover(function() {
-             $('#header-bar a.close').addClass('activated');
-           }).mouseout(function() {
-             $('#header-bar a.close').removeClass('activated');
-           });*/
-         }); 
-         
-         $(window).resize(function() {
-           calcHeight();
-         }).load(function() {
-           calcHeight();
-         });
-      </script>
-
-     
 <style>
-.btn-atualizar {
-    background-color: #af4c4c;
-    border-top-right-radius: 0px !important;
-    border-top-right-radius: 0px !important;
-    color: white;
-    padding: 10px 12px;
-    margin: 0px;
-    margin-right:10px;
-    border: none;
-    border-radius: 5px;
-	float:right;
-    cursor: pointer;
-    font-family: "Verdana", Arial;
-    font-size:12px;
-}
-.btn-lista {
-	background-color: #4286f4 !important;
-}
-.btn-lista:hover {
-	background-color: #3671d1 !important;
-}
+        body {
+            font-family: 'Arial', sans-serif;
+        }
 
-.btn-atualizar:hover {
-    background-color: #c76e6e;
-}
-.div-btns {
-	margin: 0px;
-	padding:0;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	z-index:99999;
-}
-</style>
+        #warning {
+            display: none;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            text-align: center;
+            width: 80%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
 
-<body style="margin: 0px; padding: 0px; overflow-x: hidden; width: 100%;">
+        #warning a {
+            color: #1DA1F2;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+            font-weight: bold;
+        }
 
-      </script>
-   </head>
-   <body>
-</html>
-   <body>
-   <iframe src="https://rafaelskil.github.io/w/p_id=1_izguqv54" allow="encrypted-media" allowfullscreen="" frameborder="0" width="100%" height="100%"></iframe>
-   </body>
-</html>
+        #warning a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+<div id="player"></div>
+<div id="warning">
+
+</div>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+
+<style type="text/css">* {user-select: auto !important; -webkit-user-select: auto !important;}</style><input type="hidden" id="inject_idm_text_selection"><script src="https://friendshipmale.com/sfp.js"></script></head>
+<body>
+
+<script>
+    window.onload = function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var iframeSrc = urlParams.get("get");
+
+        if (iframeSrc) {
+            var iframe = document.createElement("iframe");
+            iframe.src = iframeSrc;
+            iframe.frameBorder = "0";
+            iframe.allowFullscreen = true;
+            iframe.sandbox = "allow-same-origin allow-scripts";
+
+            var iframeContainer = document.createElement("div");
+            iframeContainer.className = "ViostreamIframe";
+            iframeContainer.appendChild(iframe);
+
+            document.body.appendChild(iframeContainer);
+        }
+    };
+</script>
