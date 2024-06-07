@@ -150,7 +150,7 @@ const myApi = "6b2dec73b6697866a50cdaef60ccffcb";
 
 const NowPlaying = async () => {
   const res = await fetch(
-    `https://api.themoviedb.org/3/movie/now_playing?api_key=${myApi}&language=en-US&page=1`
+    `https://plex.maxcine.top/public/random-movie?api_key=${myApi}&language=en-US&page=1`
   );
   const data = await res.json();
   const NowPlayingmovies = data.results;
