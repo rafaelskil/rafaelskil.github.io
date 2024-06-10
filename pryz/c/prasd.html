@@ -120,124 +120,97 @@
   
   <script src="https://unpkg.com/videojs-contrib-hls.js"></script>
   <!--<script type="text/javascript" src="https://xn----------------g34l3fkp7msh1cj3acobj33ac2a7a8lufomma7cf2b1sh.xn---1l1--5o4dxb.xn---22--11--33--99--75---------b25zjf3lta6mwf6a47dza94e.xn--pck.xn--zck.xn--0ck.xn--pck.xn--yck.xn-----0b4asja8cbgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b/player3/viblast-6-62/viblast.js"></script>-->
- 
-<script>
-  let pointerTracker = function (e) {
-    let out = { x: 0, y: 0 };
-    if (
-      e.type == "touchstart" ||
-      e.type == "touchmove" ||
-      e.type == "touchend" ||
-      e.type == "touchcancel" ||
-      e.type == "touchforcechange"
-    ) {
-      let touch =
-        e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-      out.x = touch.pageX;
-      out.y = touch.pageY;
-    } else if (
-      e.type == "mousedown" ||
-      e.type == "mouseup" ||
-      e.type == "mousemove" ||
-      e.type == "mouseover" ||
-      e.type == "mouseout" ||
-      e.type == "mouseenter" ||
-      e.type == "mouseleave"
-    ) {
-      out.x = e.pageX;
-      out.y = e.pageY;
-    }
-    return out;
-  };
 
-  document.addEventListener("mousemove", function (e) {
-    let tracker = pointerTracker(e);
-    parent.postMessage(tracker, "*");
-  });
+<html>
+<head>
+    <title>UFC | JWPlayer</title>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <meta http-equiv="Content-Language" content="pt-br" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/reidoscanais/rdc@main/assets/css/player-v3.1.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/reidoscanais/rdc@main/assets/css/hotstar.css">
+    <script src="//cdn.jsdelivr.net/gh/reidoscanais/rdc@main/assets/jwplayer/jwplayer.latest.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var referrer = document.referrer;
+        var isIframe = false;
 
-  document.addEventListener("touchstart", function (e) {
-    let tracker = pointerTracker(e);
-    parent.postMessage(tracker, "*");
-  });
-</script>
-<script type="text/javascript">
+        try {
+            isIframe = window.self !== window.top;
+        } catch (e) {
+            isIframe = true;
+        }
 
-    function adjustWH(){
-       var leftWidth = $(".vjs-play-control").width()+$(".vjs-volume-control").width();
-      var rightWidth = $(".vjs-fullscreen-control").width()+$(".vjs-duration").width()+$(".vjs-current-time").width();
-      // console.log(+$(".vjs-time-control").width());
-      $(".vjs-custom-control-spacer").width($(".vjs-control-bar").width()-(leftWidth+rightWidth));
-      $(".vjs-custom-control-spacer").css("left", leftWidth+"px");
-      // console.log($(".vjs-custom-control-spacer"));
-    }
+        var currentDomain = window.location.hostname;
 
-    // console.log(video);
+        if (!isIframe) {
 
-    $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange', function(e)
-    {
-       setTimeout(function(){
-         adjustWH();
-       },300);
+        } else if (referrer) {
+
+            if (!allowedDomains.includes(referrerDomain)) {
+
+            }
+        } else if (!allowedDomains.includes(currentDomain)) {
+
+        }
     });
-
-    $(document).ready(function(){
-      adjustWH();  
-    });
-
-    $(document).ready(function(){
-       $("video").on('timeupdate', function(){
-         adjustWH();
-      });
-    });
-
-  </script>
- 
+</script>    
+  
+    <script>
+        jwplayer.key = 'ITWMv7t88JGzI0xPwW8I0+LveiXX9SWbfdmt0ArUSyc=';
+    </script>
+</head
 <script src="https://xn----------------g34l3fkp7msh1cj3acobj33ac2a7a8lufomma7cf2b1sh.xn---1l1--5o4dxb.xn---22--11--33--99--75---------b25zjf3lta6mwf6a47dza94e.xn--pck.xn--zck.xn--0ck.xn--pck.xn--yck.xn-----0b4asja8cbgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b/player3/rc-player/player/dist/videojs-chromecastv3.js?update=5"></script>
 <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script><script src="//www.gstatic.com/eureka/clank/125/cast_sender.js"></script>
 
   <link href="https://デ-ン-ッ-ク-ス-ン-デ-ド-ド-ル-ボ-ラ-ルグレフト-ブムフクトプドラア.ジ-1l1-グ.ッ-22-ク-11-ス-33-ル-99-プ-75-ゾ--エ--ブ--ス-ッ.ク.ス.ズ.ク.ジ.シグナルパブリコ-公共の標識-バレウドットウクグトットズヒ.セール/player3/encripted/snew/js/newTWO.css" rel="stylesheet" type="text/css"><script src="//www.gstatic.com/eureka/clank/124/cast_sender.js"></script><script src="https://data-beacons.s-onetag.com/dataBeacons.min.js"></script><script id="sovrn_standalone_beacon" src="https://ap.lijit.com/www/sovrn_beacon_standalone/sovrn_standalone_beacon.js"></script></head><iframe src="about:blank" style="position: absolute; width: 1px; height: 1px; display: none; opacity: 0;"></iframe><script src="//waisheph.com/5/6280144"></script>
-<body style="overflow-x: hidden; width: 100%;">
+<body>
+<div id="player"></div>
+<script>
+try {
+    document.domain = document.domain;
 
-<div id="player">
-    <div class="recap-back" style="background-image:url('https://xn----------------g34l3fkp7msh1cj3acobj33ac2a7a8lufomma7cf2b1sh.xn---1l1--5o4dxb.xn---22--11--33--99--75---------b25zjf3lta6mwf6a47dza94e.xn--pck.xn--zck.xn--0ck.xn--pck.xn--yck.xn-----0b4asja8cbgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b/player3/imgs-videos/Canais/sportv1.jpg?1');">
-      <form action="?" method="POST">
-        <button type="submit" class="captcha_button" id="submit">
-          <div class="recap-icon"></div>
-          <div class="recap-spinner"></div>
-        </button>
-    </form></div>
-</div>
+    const urlParams = new URLSearchParams(window.location.search);
+    const channelId = urlParams.get('id');
+    const apiUrl = `https://xn----itbavbvaceiz.xn-------43dbabbcqvsac8afbfdwcoeckvkngd1frlguhaj9b.net/wtc.php?id=${channelId}`;
 
-<script type="text/javascript">
-$('.captcha_button').click(function() {
-        $('.recap-icon').css('display', 'none')
-        $('.recap-spinner').css('display', 'block')
-    })
+    if (channelId) {
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const { link, licenses } = data[0];
 
-    var onSubmit = function(token) {
-        setTimeout(function(event) {
-            $.ajax({
-            url: 'https://xn----itbavbvaceiz.xn-------43dbabbcqvsac8afbfdwcoeckvkngd1frlguhaj9b.net/wtc.php?id=1579',
-            type: 'POST',
-            data: {'response':token,'rctoken':'c0hIMUJkN2JVMWNhRXpoU3hWRjI5REdh'},
-            success: function(msg) {
-                $('#player').fadeOut(500).fadeIn(500, function() {
-                    $('#player').html(msg)
-                })
-            }
-        });
-        }, )
-    };
-
-    document.querySelector("form").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-    onSubmit();
-        });
+                var playerInstance = jwplayer("player");
+                playerInstance.setup({
+                    playlist: [{
+                        title: "",
+                        sources: [{
+                            default: false,
+                            type: "dash",
+                            file: link,
+                            drm: {
+                                widevine: {
+                                    url: licenses.find(l => l.scheme === 'drm.WIDEVINE_CENC').licenseURL,
+                                },
+                                playready: {
+                                    url: licenses.find(l => l.scheme === 'drm.PLAYREADY_CENC').licenseURL,
+                                }
+                            },
+                            label: "0"
+                        }]
+                    }],
+                    width: "100%",
+                    height: "100%",
+                    cast: {},
+                    autostart: false,
+                    logo: {
+                        file: '',
+                        link: '',
+                        position: 'top-right'
+                    },
+                    sharing: {}
+                });
+            })
 </script>
-
-<script src="https://xn----------------g34l3fkp7msh1cj3acobj33ac2a7a8lufomma7cf2b1sh.xn---1l1--5o4dxb.xn---22--11--33--99--75---------b25zjf3lta6mwf6a47dza94e.xn--pck.xn--zck.xn--0ck.xn--pck.xn--yck.xn-----0b4asja8cbgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b/player3/campanhanew3.js?update=op4" async=""></script>
-<iframe src="https://xn----------------g34l3fkp7msh1cj3acobj33ac2a7a8lufomma7cf2b1sh.xn---1l1--5o4dxb.xn---22--11--33--99--75---------b25zjf3lta6mwf6a47dza94e.xn--pck.xn--zck.xn--0ck.xn--pck.xn--yck.xn-----0b4asja8cbgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b/player3/contador.php?static=true" frameborder="0" scrolling="no" width="0" height="0"></iframe>
-
-
-<div id="guerejo" style="width: 100%; height: 800px; overflow: hidden; top: 0px; left: 0px; z-index: -9999999; position: fixed;"><object id="iplezier" width="100%" height="800" frameborder="0" scrolling="no" style="position:absolute;width:100%;height:800px;" data="https://デ-ン-ッ-ク-ス-ン-デ-ド-ド-ル-ボ-ラ-ルグレフト-ブムフクトプドラア.ジ-1l1-グ.ッ-22-ク-11-ス-33-ル-99-プ-75-ゾ--エ--ブ--ス-ッ.ク.ス.ズ.ク.ジ.シグナルパブリコ-公共の標識-バレウドットウクグトットズヒ.セール/player3/campanhanew3.php?vid=HCKALDBDCEP01"></object></div><div id="guerejoback" style="width: 100%; height: 800px; overflow: hidden; top: 0px; left: 0px; z-index: -99999999; position: fixed;"></div><img src="https://um.simpli.fi/lj_match?r=42415"><iframe src="https://get.s-onetag.com/underground-sync-portal/Portal.html" title="sovrn-sync-beacon-portal" style="width: 1px; height: 1px; position: absolute; left: -99px; top: -99px;"></iframe><iframe id="sovrn_beacon" margin="0" padding="0" frameborder="0" width="1" height="1" scrolling="no" src="https://ce.lijit.com/beacon?informer=&amp;gdpr_consent=&amp;us_privacy=&amp;gpp=&amp;gpp_sid=" style="margin: 0px; padding: 0px; border: 0px none; width: 1px; height: 1px; overflow: hidden;"></iframe></body><div class="vn" style="pointer-events: none; position: absolute; top: 0px; left: 0px; width: 595px; height: 601px; z-index: 2147483647;"><div style="border: none; position: absolute; top: 0px; left: 0px; width: 595px; height: 800px; z-index: 2147483647; pointer-events: auto;"></div><div style="border: none; position: absolute; top: 0px; left: 0px; width: 595px; height: 601px; z-index: 2147483647; pointer-events: auto;"></div></div></html>
+</body>
+</html>
