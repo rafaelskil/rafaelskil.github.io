@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Stream</title>
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+</head>
+<body>
+    <h1>Meu Stream MPEG-DASH</h1>
+    <video id="videoPlayer" controls></video>
+    <script>
+        var url = 'https://0060-tbx.dtvott.com/multishow/manifest.mpd'; // Substitua pelo URL do seu manifesto
+        var player = dashjs.MediaPlayer().create();
+        player.initialize(document.querySelector("#videoPlayer"), url, true);
+    </script>
+</body>
+</html>
