@@ -749,7 +749,7 @@ img,video {
 
 .bg-slate-100 {
     --tw-bg-opacity: 1;
-    background-color: #0d141e;
+    background-color: #000000;
     /* background-color: rgb(241 245 249/var(--tw-bg-opacity)); */
     border-bottom: solid 1px #ffffff4f;
 }
@@ -1036,7 +1036,7 @@ body {
     margin: 0;
     padding: 0;
     transition: all .4s;
-    background: #0d141e;
+    background: #000000;
     color: #fff;
 }
 
@@ -1346,4 +1346,3 @@ body {
 
 scrollbar-width: thin; 
 scrollbar-color: #141d26 #eef8fc ; 
-
