@@ -88,7 +88,7 @@ button,input,optgroup,select,textarea {
     font-size: 100%;
     font-weight: inherit;
     line-height: inherit;
-    color: inherit;
+    color: #00000;
     margin: 0;
     padding: 0
 }
